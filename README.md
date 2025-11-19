@@ -15,7 +15,7 @@ This project enables you to run Local LLMs (Ollama), Web Crawlers, and File Read
 1.  **Install Dependencies**
     Open your terminal or command prompt and install the required libraries:
     ```bash
-    pip install requests langchain-community python-dotenv
+    pip install -r requirements.txt
     ```
 
 2.  **Prepare the Model**
