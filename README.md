@@ -1,6 +1,6 @@
 # Excel-Python LLM Bridge
 
-This project enables you to run Local LLMs (Ollama), Web Crawlers, and File Readers directly inside Microsoft Excel. It uses a robust file-based communication system with Base64 encoding to ensure full support for **UTF-8 text**.
+This project enables you to run LLMs, Web Crawlers, and File Readers directly inside Microsoft Excel. It uses a robust file-based communication system with Base64 encoding to ensure full support for **UTF-8 text**.
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ This project enables you to run Local LLMs (Ollama), Web Crawlers, and File Read
     *   If nothing appears, go to **Insert > Module**.
 
 2.  **Import the Code**
-    *   Copy the entire VBA code provided (the version containing `EncodeBase64` and `DecodeBase64`).
+    *   Copy the entire VBA code.
     *   Paste it into the Module window.
     *   Save the file as an **Excel Macro-Enabled Workbook (.xlsm)**.
 
@@ -90,11 +90,4 @@ This project enables you to run Local LLMs (Ollama), Web Crawlers, and File Read
     *   The Python script processes the request.
     *   The result will appear automatically in the **cell to the right** of your formula.
 
----
 
-## Features & Notes
-
-*   **UTF-8 Support:** Fully supports Chinese input/output and Emojis thanks to custom Base64 encoding.
-*   **OneDrive Safe:** The script uses the system `%TEMP%` directory for data exchange, preventing path errors common with OneDrive/SharePoint syncing.
-*   **Timeouts:** If Python takes longer than 80 seconds, Excel will stop waiting and show `[Timeout]`.
-*   **Batch Processing:** You can select multiple cells containing formulas and run the macro to process them all sequentially.
