@@ -1,3 +1,4 @@
 langchain_ollama
 requests
 langchain_community
+python-dotenv
