@@ -1,4 +1,4 @@
-# Excel-Python LLM Bridge
+# LLM-Excel
 
 This project enables you to run LLMs, Web Crawlers, and File Readers directly inside Microsoft Excel. It uses a robust file-based communication system with Base64 encoding to ensure full support for **UTF-8 text**.
 
